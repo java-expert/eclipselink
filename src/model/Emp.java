@@ -3,10 +3,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table
+@NamedQuery(name = "find emp by id", query = "select e from Emp e where e.empId=:id")
 public class Emp {
 
 @Id
