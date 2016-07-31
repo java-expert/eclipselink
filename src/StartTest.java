@@ -11,7 +11,7 @@ public class StartTest {
 		EntityManagerFactory emfactory = Persistence.
 				createEntityManagerFactory( "EclipseLink" );
 				EntityManager entitymanager = emfactory.
-				createEntityManager( );
+				createEntityManager( ); 
 				entitymanager.getTransaction( ).begin( );
 				Emp emp = new Emp( );
 				emp.setEid( 1202 );
