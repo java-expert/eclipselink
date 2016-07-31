@@ -39,25 +39,4 @@ public class NamedQueryTest {
 		
 	}
 	
-	static void update(EntityManagerFactory emfactory, EntityManager entitymanager){
-		entitymanager.getTransaction( ).begin( );
-		Emp emp = entitymanager.find(Emp.class, 1201);
-		emp.setEname( "Golu" );
-		//entitymanager.persist( emp );
-		entitymanager.getTransaction( ).commit( );
-		entitymanager.close( );
-		emfactory.close( );
-		
-	}
-	
-	static void delete(EntityManagerFactory emfactory, EntityManager entitymanager){
-		entitymanager.getTransaction( ).begin( );
-		Emp emp = entitymanager.find(Emp.class, 1202);
-		entitymanager.remove( emp );
-		entitymanager.getTransaction( ).commit( );
-		entitymanager.close( );
-		emfactory.close( );
-		
-	}
-
 }
