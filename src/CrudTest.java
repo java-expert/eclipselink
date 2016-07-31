@@ -13,9 +13,9 @@ public class CrudTest {
 				EntityManager entitymanager = emfactory.
 				createEntityManager( );
 				
-				//add(emfactory, entitymanager);
+				add(emfactory, entitymanager);
 				
-				update(emfactory, entitymanager);
+				//update(emfactory, entitymanager);
 				
 				//delete(emfactory,entitymanager);
 				
@@ -26,9 +26,9 @@ public class CrudTest {
 	static void add(EntityManagerFactory emfactory, EntityManager entitymanager){
 		entitymanager.getTransaction( ).begin( );
 		Emp emp = new Emp( );
-		emp.setEid( 1202 );
-		emp.setEname( "Gopal" );
-		emp.setSalary( 40000 );				
+		emp.setEid( 1201 );
+		emp.setEname( "Jaggi" );
+		emp.setSalary( 50000 );				
 		entitymanager.persist( emp );
 		entitymanager.getTransaction( ).commit( );
 		entitymanager.close( );

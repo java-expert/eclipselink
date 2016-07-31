@@ -11,26 +11,26 @@ public class Emp {
 
 @Id
 @GeneratedValue(strategy= GenerationType.AUTO)
-private int eid;
+private int empId;
+private String empName;
+private double empSalary;
+
 public int getEid() {
-	return eid;
+	return empId;
 }
 public void setEid(int eid) {
-	this.eid = eid;
+	this.empId = eid;
 }
 public String getEname() {
-	return ename;
+	return empName;
 }
 public void setEname(String ename) {
-	this.ename = ename;
+	this.empName = ename;
 }
 public double getSalary() {
-	return salary;
+	return empSalary;
 }
 public void setSalary(double salary) {
-	this.salary = salary;
+	this.empSalary = salary;
 }
-private String ename;
-private double salary;
-
 }
