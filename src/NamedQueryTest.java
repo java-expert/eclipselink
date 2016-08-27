@@ -27,7 +27,7 @@ public class NamedQueryTest {
 		Query q=entitymanager.createNamedQuery("find emp by id");
 		q.setParameter("id", 1);
 		List<Emp> empList=q.getResultList();
-		System.out.println(empList.get(0).getEname());
+		System.out.println("----------name :: "+empList.get(0).getEname());
 		//entitymanager.getTransaction( ).commit( );
 		entitymanager.close( );
 		emfactory.close( );
