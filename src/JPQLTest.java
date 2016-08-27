@@ -12,7 +12,7 @@ public class JPQLTest {
 	public static void main(String[] args) {
 		try{
 		EntityManagerFactory emfactory = Persistence.
-				createEntityManagerFactory( "EclipseLink" );
+				createEntityManagerFactory( "persistence_unit_name" );
 				EntityManager entitymanager = emfactory.
 				createEntityManager( );
 				

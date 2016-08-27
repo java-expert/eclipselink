@@ -9,7 +9,7 @@ public class CrudTest {
 	public static void main(String[] args) {
 		try{
 		EntityManagerFactory emfactory = Persistence.
-				createEntityManagerFactory( "EclipseLink" );
+				createEntityManagerFactory( "persistence_unit_name" );
 				EntityManager entitymanager = emfactory.
 				createEntityManager( );
 				
@@ -26,8 +26,8 @@ public class CrudTest {
 	static void add(EntityManagerFactory emfactory, EntityManager entitymanager){
 		entitymanager.getTransaction( ).begin( );
 		Emp emp = new Emp( );
-		emp.setEid( 1201 );
-		emp.setEname( "Jaggi" );
+		//emp.setEid( 1203 );
+		emp.setEname( "Jaggiqqqq" );
 		emp.setSalary( 50000 );				
 		entitymanager.persist( emp );
 		entitymanager.getTransaction( ).commit( );
