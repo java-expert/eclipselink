@@ -27,7 +27,7 @@ public class CrudTest {
 		entitymanager.getTransaction( ).begin( );
 		Emp emp = new Emp( );
 		//emp.setEid( 1203 );
-		emp.setEname( "Jaggiqqqq" );
+		emp.setEname( "abcqqqq" );
 		emp.setSalary( 50000 );				
 		entitymanager.persist( emp );
 		entitymanager.getTransaction( ).commit( );
